@@ -81,7 +81,7 @@ async def ranks(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             )
         await update.message.reply_text(message, parse_mode='Markdown')
     else:
-        await update.message.reply_text('Sorry, I could not fetch the data for the top 10 cryptocurrencies. Please try again later.')
+        await update.message.reply_text('Sorry, I could not get the current status of data for the top 10 cryptocurrencies. Please try again later.')
 
 app = ApplicationBuilder().token('7047183236:AAGmr6yJXruMJBaFpYLKuJSDZZB0WPjQyks').build()
 
