@@ -66,7 +66,7 @@ async def data(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def ranks(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     data = get_top_cryptos()
     if data:
-        message = "Here are the top 10 cryptocurrencies:\n"
+        message = "Here are the largest 10 cryptocurrencies:\n"
         for i, crypto in enumerate(data['data'], start=1):
             crypto_name = crypto['name']
             symbol = crypto['symbol']
